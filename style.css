@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    /* Align the flex items at the center of the container*/
+    justify-content: center;
+    /* Center the alignments for all the items of the flexible <div> element*/
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 400px;
+    min-width: 400px;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 55px 50px -20px #b6b6b6;
+}

@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  main {
+      min-height: 400px;
+      width: 70%;
+      min-width: 600px;
+      background: #fff;
+      padding: 40px 20px;
+      border-radius: 5px;
+      box-shadow: 5px 55px 50px -20px #b6b6b6; 
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  /* ============================
+      Twitter
+     ============================
+  */
+  
+  .twitter {
+    display: flex;
+  }
+  
+  .twitter__bird {
+    margin-left: auto;
+    margin-right: auto/*this will push aside the other flex-items and the bird takes the remaining space!*/
+  } 
+  
+  /*
+    UI cleanups for the twitter navigation. This just makes things look good on the eye 😎
+  */
+  
+  .twitter {
+    border: 1px solid red;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238,238,238 ,1);
+    border-radius: 5px;
+    color: rgba(117,117,117 ,1);
+    box-shadow: 5px 10px 20px -20px rgba(85,172,238 ,1);
+  }
+  .twitter li {
+    cursor: pointer;
+  }
+  .twitter li:hover{
+    color: rgba(85,172,238 ,1);
+  }
+  .twitter__bird {
+    color: rgba(85,172,238 ,1);
+    font-size: 1.3em;
+  }
+  .twitter li:not(:last-child):not(.twitter__bird) {
+    margin-right: 10px;
+  }
+  .twitter li  i:not(.fa-twitter):not(.fa-search):not(.fa-user-circle-o) {
+    margin-right: 3px;
+  }
+  .twitter li > button {
+    font-size: 0.8em;
+    border: 0;
+    background: rgba(85,172,238 ,1);
+    color: #fff;
+    border-radius: 100px;
+  }
+  
+  
+  
+  
+  
+  /* ============================
+      Facebook
+     ============================
+  */
+  .facebook {
+    display: flex;
+  }
+  
+  .facebook__search {
+    margin-right: auto;
+  }
+  /*
+    UI cleanups for the facebook navigation. Let's make facebook great again :-) 
+  */
+  .facebook {
+    border: 1px solid red;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238,238,238 ,1);
+    border-radius: 5px;
+    background: rgba(59,89,153 ,1);
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59,89,153 ,1)
+  }
+  
+  .facebook__brand  i{
+    font-size: 1.5em;
+  }
+  .facebook li:not(:last-child):not(:first-child):not(.facebook__search) {
+    margin-right: 10px;
+  }
