@@ -1,0 +1,21 @@
+/*Make parent element a flex container*/
+
+ul {
+    border: 1px solid red;
+    display: flex;
+    /*or inline-flex*/
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    
+}
+/**  ul style backup
+flex-direction:  row, column,  row-reverse, column-reverse 
+flex-wrap: wrap|| *nowrap || wrap-reverse
+**/
+
+li {
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}
